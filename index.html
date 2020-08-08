@@ -3,82 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-     integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sample-css.css">
+
+    <style>
+        .patches {
+            background-color: #FFF;
+             
+              opacity: 0.4;
+              border-radius: 20px;
+        }
+        .transform-id {
+            transition: .225s ease;
+            transform: scale(1) !important;
+            flex-grow: 1;
+        }
+        
+    </style>
+
 </head>
 <body>
-    <div class="container">
-        <div class="row starting-margin" >
-            <div class="col-12 ">
-                <img src="/img/avatar.png" />
-            </div>
-        </div>
-
-        <div class="row py-2">
-            <div class="col-12">
-                <h2><strong>Muney links all your finance apps</strong></h2>
-            </div>
-            <div class="col-12 py-2">
-                <span class="faint-text">Click "Select Account" to continue</span>
-            </div>
-        </div>
-
-        <div class="row py-5 mx-2">
-            <div class="col-12 green-background-1 border-radius-10 py-3">
-                <div class="row">
-                    <div class="col-1">
-                        <img class="check-mark" src="/img/Checkmark.svg" />
-                        </div>
-                    <div class="col-10">
-                       <p> Secure <br/>
-                            <strong>100% data security on Mono app
-                            </strong>
-                        </p> 
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-1">
-                        <img class="check-mark" src="/img/Checkmark.svg" />
-                        </div>
-                    <div class="col-10">
-                       <p> <span class="faint-text">Private by design
-                    </span> <br/>
-                            <strong>Zero access to your details
-                            </strong>
-                        </p> 
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-1">
-                        <img class="check-mark" src="/img/Checkmark.svg" />
-                        </div>
-                    <div class="col-10">
-                       <p> <span class="faint-text">Finance Protection
-                    </span> <br/>
-                            <strong>We don't have access to your funds
-                            </strong>
-                        </p> 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-            <div class="d-flex justify-content-center">
-                <a href="financial-index.html" class="btn btn-account" style="width: 100%;">
-                    <strong> Select Account
-                    </strong>
-                </a>
-            </div>
-        
-    </div>
     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <center class="py-5">
+        <!-- <h2>kdjslkf</h2> -->
+        <!-- <div class="row py-5"> -->
+
+                <img class="py-5" src="img/mono-light-logo.svg" />
+              <h4 class="card-title">Live Demo</h4>
+              <p class="card-text">Click the launch demo button to experience what your users will see when they  use Mono to connect their financial accounts with your app. It will only take few seconds.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch Mono Demo
+              </button>
+            
+        <!-- </div> -->
+    </center>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content ">
+
+            <!-- STARTING THE FIRST MODAL -->
+            <div class="container-fluid green-background-0 p-5" id="index-modal">
+                <div class="row starting-margin" >
+                    <div class="col-12 ">
+                        <img src="/img/avatar.png" />
+                    </div>
+                </div>
+        
+                <div class="row py-2">
+                    <div class="col-12">
+                        <h2><strong>Muney links all your finance apps</strong></h2>
+                    </div>
+                    <div class="col-12 py-2">
+                        <span class="faint-text">Click "Select Account" to continue</span>
+                    </div>
+                </div>
+        
+                <div class="row py-5 mx-2">
+                    <div class="col-12 green-background-1 border-radius-10 py-3">
+                        <div class="row">
+                            <div class="col-1">
+                                <img class="check-mark" src="/img/Checkmark.svg" />
+                                </div>
+                            <div class="col-10">
+                               <p> Secure <br/>
+                                    <strong>100% data security on Mono app
+                                    </strong>
+                                </p> 
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-1">
+                                <img class="check-mark" src="/img/Checkmark.svg" />
+                                </div>
+                            <div class="col-10">
+                               <p> <span class="faint-text">Private by design
+                            </span> <br/>
+                                    <strong>Zero access to your details
+                                    </strong>
+                                </p> 
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-1">
+                                <img class="check-mark" src="/img/Checkmark.svg" />
+                                </div>
+                            <div class="col-10">
+                               <p> <span class="faint-text">Finance Protection
+                            </span> <br/>
+                                    <strong>We don't have access to your funds
+                                    </strong>
+                                </p> 
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                    <div class="d-flex justify-content-center">
+                        <button onclick="showFinancialIndex()" class="btn btn-account" style="width: 100%;">
+                            <strong> Select Account
+                            </strong>
+                        </a>
+                    </div>
+                </div>
+                <!-- ENDING THE FIRST MODAL -->
+
+                <!-- STARTING THE FINANCIAL MODAL -->
+
+                <div class="container-fluid green-background-0 p-5" id="financial-modal">
+                    <div class="row starting-margin">
+                        <div class="col-12 ">
+                           <span onclick="showIndex()">
+                            <img src="/img/back-arrow.svg" />
+                        </span>
+                        </a> 
+                        </div>
+                    </div>
+            
+                    <div class="row py-4">
+                        <div class="col-12">
+                            <h2><strong>Select a financial institution</strong></h2>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group mb-3 green-background-1 border-radius-10 py-1 px-3">
+                                <div class="input-group-prepend">
+                                  <span><img src="/img/search.svg" /></span>
+                                </div>
+                                <input type="text" class="form-control" style="border: none; background-color: inherit;"
+                                aria-label="Example text with button addon" aria-describedby="button-addon1"
+                                placeholder="Search banks, fintechs etc">
+                              </div>
+                        </div>
+                    </div>
+            
+                    <div class="row py-5 mx-2">
+                        <div class="col-5 mr-3 orange-background border-radius-10 py-4
+                        d-flex justify-content-center">
+                           <span onclick="showGtbank()">
+                            <img src="img/gtbank.svg" />
+                           </span>
+                        </div>
+            
+                        <div class=" col-5 ml-4 purple-background border-radius-10 py-4
+                        d-flex justify-content-center">
+                        <span onclick="showGtbank()">
+                            <img src="img/polarisBank.svg" />
+                        </span>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="row mx-2">
+                        <div class="col-5 mr-3 cowry-wise-background border-radius-10 py-4
+                        d-flex justify-content-center">
+                        <span onclick="showGtbank()">
+                            <img src="img/cowryWise.svg" />
+                        </span>
+                        </div>
+            
+                        <div class=" col-5 ml-4 piggy-vest-background border-radius-10 py-4
+                        d-flex justify-content-center">
+                        <span onclick="showGtbank()">
+                            <img src="img/piggyVest.png" />
+                        </span>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- ENDING FINANCIAL MODAL PAGE -->
+
+                <!-- STARTING GTBANK MODAL -->
+
+                <div id="gtbank-modal" class="container-fluid p-5" style=" background-color: #D94F00; 
+                color: antiquewhite;">
+
+                    <div class="row starting-margin">
+                        <div class="col-12 ">
+                            <span onclick="showFinancialIndex()">
+                            <img src="/img/back-arrow.svg" />
+                        </span>
+                        </div>
+                    </div>
+            
+                    <div class="row py-4">
+                        <div class="col-12 ">
+                            <img src="/img/gtbank.svg"  style="border: 2px solid #fff; border-radius: 20px;" />
+                        </div>
+                    </div>
+            
+                    <div class="row py-2">
+                        <div class="col-12">
+                            <h2><strong>
+                                 GTBank Internet Banking
+                                </strong>
+                            </h2>
+                        </div>
+                    </div>
+            
+                    <div class="row py-5 mx-2">
+                        <div class="floating-form">
+                            <div class="lighter-background">
+                            <div class="floating-label">      
+                              <input class="floating-input" type="text" placeholder=" ">
+                              <span class="highlight"></span>
+                              <label>GTBank User ID:</label>
+                            </div>
+                        </div>
+                        
+            
+                        <div class="lighter-background">
+                            <div class="floating-label">      
+                                <input class="floating-input" type="password" placeholder=" ">
+                                <span class="highlight"></span>
+                                <label>Password</label>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center px-4">
+                            
+                            <button onclick="showAccountLinked()" class="btn link-account" style="width: 100%;">
+                                <strong> Link Account
+                                </strong>
+                            </button>
+                        </div>
+
+                    </div>
+                <!-- ENDING GTBANK MODAL -->
+
+                <!-- START SHOW ACCOUNT LINKED-->
+                <div id="account-linked">
+                    <!-- <div class="patches" style="z-index: -3; position: absolute; margin-top: 0px; width: 100px; height: 300px; "></div>
+                    <div class="patches" style="z-index: -10; position: fixed; margin-top: 0px; right: 0px; width: 100px; height: 300px; "></div> -->
+                    <div class="container-fluid p-5" >
+                       
+                
+                        
+                       <div class="d-flex justify-content-center" >
+                           <img src="/img/star-background.png"  style="position: absolute; margin-top: 100px; "/>
+                           <img src="/img/link.png" style="position: absolute; margin-top: 100px; z-index: 99;" />
+                       </div>
+                
+                       <div class="d-flex justify-content-center" style="margin-top: 300px;">
+                           <img src="/img/avatar.png" />
+                           <img src="/img/line.svg"  />
+                           <img class="mx-1" src="/img/gtbank.svg" />
+                       </div>
+                
+                       <div class="d-flex justify-content-center ">
+                           <h3>Account Linked!</h3>
+                       </div>
+                       <div class="d-flex justify-content-center mx-5">
+                           <p>Your bank account has been successfully linked to Muney</p>
+                       </div>
+                
+                       <div class="d-flex justify-content-center">
+                        <button class="btn btn-account" style="width: 100%;">
+                            <strong> Continue
+                            </strong>
+                            </button>
+                       </div> 
+                
+                       <div class="d-flex justify-content-center" style=" margin-top: 80px;">
+                        <button class="btn" style="margin-bottom: 0px; background-color: rgba(8, 62, 158, 0.2); border-radius: 10px;">
+                            <strong> Link another account
+                            </strong>
+                            </button>
+                       </div>
+                    </div>
+                
+                   
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>  
+
+    <script>
+        $('#financial-modal').hide();
+        $('#gtbank-modal').hide();
+        $('#account-linked').hide();
+
+        function showIndex() {
+            $('#index-modal').show();
+            $('#financial-modal').hide();
+            $('#gtbank-modal').hide();
+            $('#account-linked').hide();
+        }
+
+        function showFinancialIndex() {
+            $('#index-modal').hide();
+            $('#financial-modal').show();
+            $('#gtbank-modal').hide();
+            $('#account-linked').hide();
+
+        }
+
+        function showGtbank() {
+            $('#index-modal').hide();
+            $('#financial-modal').hide();
+            $('#gtbank-modal').show();
+            $('#account-linked').hide();
+
+        }
+
+        function showAccountLinked() {
+            $('#index-modal').hide();
+            $('#financial-modal').hide();
+            $('#gtbank-modal').hide();
+            $('#account-linked').show();
+
+        }
+    </script>
 </body>
 </html>
