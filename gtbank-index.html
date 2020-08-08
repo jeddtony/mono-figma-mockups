@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+     integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sample-css.css">
+    <script type="application/javascript" src="https://connect.withmono.com/connect.js"></script>
+</head>
+<body style=" background-color: #D94F00; 
+color: antiquewhite;">
+    <div class="container">
+
+        <div class="row starting-margin">
+            <div class="col-12 ">
+                <img src="/img/back-arrow.svg" />
+            </div>
+        </div>
+
+        <div class="row py-4">
+            <div class="col-12 ">
+                <img src="/img/gtbank.svg"  style="border: 2px solid #fff; border-radius: 20px;" />
+            </div>
+        </div>
+
+        <div class="row py-2">
+            <div class="col-12">
+                <h2><strong>
+                     GTBank Internet Banking
+                    </strong>
+                </h2>
+            </div>
+        </div>
+
+        <div class="row py-5 mx-2">
+            <div class="floating-form">
+                <div class="lighter-background">
+                <div class="floating-label">      
+                  <input class="floating-input" type="text" placeholder=" ">
+                  <span class="highlight"></span>
+                  <label>GTBank User ID:</label>
+                </div>
+            </div>
+            
+
+            <div class="lighter-background">
+                <div class="floating-label">      
+                    <input class="floating-input" type="password" placeholder=" ">
+                    <span class="highlight"></span>
+                    <label>Password</label>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+            <div class="d-flex justify-content-center px-4">
+                <!-- <a href="/account-linked.html" class="btn link-account" style="width: 100%;">
+                    <strong> Link Account
+                    </strong>
+                </a> -->
+                <button id="launch-btn" class="btn link-account" style="width: 100%;">
+                    <strong> Link Account
+                    </strong>
+                </button>
+            </div>
+        
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>  
+
+   
+  
+    <script type="application/javascript">
+        var options = {
+          onSuccess: function (response) {
+            // alert(JSON.stringify(response));
+            window.location.href = "/account-linked.html"
+                      /**
+                          response : { "code": "code_xyz" }
+                          you can send this code back to your server to get this
+                          authenticated account and start making requests.
+                      */
+          },
+  
+          onClose: function () {
+            // alert('user closed the widget.')
+          }
+        };
+  
+        var connect = new Connect("test_pk_gJFkE0mscGylNk8CGoZZ", options);
+        connect.setup();
+  
+        var launch = document.getElementById('launch-btn');
+        launch.onclick = function (e) {
+          connect.open()
+        };
+      </script>
+
+</body>
+</html>
